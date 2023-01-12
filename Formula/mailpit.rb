@@ -54,6 +54,11 @@ class Mailpit < Formula
   end
 
   test do
-    system "#{bin}/mailpit version"
+    address = "127.0.0.1:#{free_port}"
+    fork { exec "#{bin}/mailpit", "--listen", address }
+    sleep 2
+
+    output = shell_output("curl --silent #{address}")
+    assert_match "<title>MailPit</title>", output
   end
 end
