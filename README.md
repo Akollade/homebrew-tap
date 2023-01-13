@@ -10,4 +10,4 @@ You can directly type `brew install akollade/tap/<formula>` to install the speci
 
 ## Available formulae
 
-* [mailpit](https://github.com/axllent/mailpit) : An email and SMTP testing tool with API for developers 
+* [mailpit](https://github.com/axllent/mailpit): An email and SMTP testing tool with API for developers 
